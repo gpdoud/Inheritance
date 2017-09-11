@@ -13,21 +13,21 @@ namespace TestInheritance {
 			acct.Number = 1;
 			acct.Name = "Greg's Account";
 			acct.Balance = 100.00;
-			Console.WriteLine($"{acct.Number}:{acct.Name}-{acct.Balance}");
+			//Console.WriteLine($"{acct.Number}:{acct.Name}-{acct.Balance}");
 
 			Savings sav = new Savings();
 			sav.IntRate = 0.05;
 			sav.Number = 2;
 			sav.Name = "Greg's Savings";
 			sav.Balance = 200.00;
-			Console.WriteLine($"{sav.Number}:{sav.Name}-{sav.Balance}::{sav.IntRate}");
+			//Console.WriteLine($"{sav.Number}:{sav.Name}-{sav.Balance}::{sav.IntRate}");
 
 			List<Account> myAccounts = new List<Account>();
 			myAccounts.Add(sav);
 			myAccounts.Add(acct);
 
-			foreach(var account in myAccounts) {
-				Console.WriteLine(account.ToPrint());
+			foreach(var sa in myAccounts) {
+				Console.WriteLine(sa.ToPrint());
 			}
 
 		}
